@@ -22,6 +22,7 @@ void main() async {
       title: "Funterest",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
+      debugShowCheckedModeBanner: false,
     ),
   );
 }
