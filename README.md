@@ -1,5 +1,8 @@
 # 🎯 Funterest
 
+<!-- add image banner here -->
+![Funterest Banner](./frame.png)
+
 **Beat Boredom with Fun Activities!**
 
 [![Flutter](https://img.shields.io/badge/Flutter-^3.9.0-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
