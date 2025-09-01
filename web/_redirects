@@ -1,1 +1,9 @@
+    /robots.txt /robots.txt 200
+    /sitemap.xml /sitemap.xml 200
+    /favicon.ico /favicon.ico 200
+    /og-image.png /og-image.png 200
+    /og-image.jpg /og-image.jpg 200
+    /og/* /og/:splat 200
+    /images/* /images/:splat 200
+    /assets/* /assets/:splat 200
     /* /index.html 200
