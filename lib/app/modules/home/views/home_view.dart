@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -20,21 +21,26 @@ class HomeView extends GetResponsiveView<HomeController> {
       backgroundColor: const Color(0xFFF7F8FA),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(bottom: 24.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(5),
-              child: Image.asset(
-                'assets/pro26.png',
-                height: 20,
-                width: 20,
-                fit: BoxFit.cover,
+        child: GestureDetector(
+          onTap: (){
+            launchUrlString("https://www.pro26.in");
+          },
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(5),
+                child: Image.asset(
+                  'assets/pro26.png',
+                  height: 20,
+                  width: 20,
+                  fit: BoxFit.cover,
+                ),
               ),
-            ),
-            const SizedBox(width: 8.0),
-            Text('www.pro26.in'),
-          ],
+              const SizedBox(width: 8.0),
+              Text('www.pro26.in'),
+            ],
+          ),
         ),
       ),
       body: SafeArea(
